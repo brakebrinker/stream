@@ -1,0 +1,21 @@
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% bootstrap_css %}
+{#    {% bootstrap_javascript jquery='full' %}#}
+    <title>{% block title %}AMA Supercross{% endblock %}</title>
+</head>
+<body>
+    {% include 'inc/_nav.html' %}
+    <div class="container">
+
+{#        {% bootstrap_messages %}#}
+
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
